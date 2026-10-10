@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northwind Outfitters — OmniSight demo target</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-banner">OmniSight demo target: this page contains deliberately introduced UI bugs.</div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">Northwind</a>
+      <ul class="nav-links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#checkout">Pricing</a></li>
+        <li><a href="#signup">Support</a></li>
+        <li><a href="#why">Account</a></li>
+      </ul>
+      <a class="nav-cta" href="#signup">Sign up</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="section hero">
+      <h1>Gear for every trail</h1>
+      <p class="lead">Lightweight, repairable outdoor equipment with free returns.</p>
+    </section>
+
+    <section class="section" id="products">
+      <h2>Featured products</h2>
+      <div class="cards">
+        <article class="card"><h3>Trail jacket</h3><p>Waterproof shell that packs into its own pocket.</p><a class="btn" href="#checkout">Buy now</a></article>
+        <article class="card"><h3>Summit pack</h3><p>38 litre pack with a padded, ventilated back panel.</p><a class="btn" href="#checkout">Buy now</a></article>
+        <article class="card"><h3>Ridge boots</h3><p>Grippy outsole and a roomy toe box for long days.</p><a class="btn" href="#checkout">Buy now</a></article>
+      </div>
+    </section>
+
+    <section class="section" id="checkout">
+      <h2>Checkout</h2>
+      <div class="checkout-card">
+        <div class="line"><span>Trail jacket</span><strong>$129.00</strong></div>
+        <div class="line"><span>Shipping</span><strong>$6.00</strong></div>
+        <div class="line total"><span>Total</span><strong>$135.00</strong></div>
+        <button class="btn btn-checkout" type="button">Complete secure checkout</button>
+      </div>
+    </section>
+
+    <section class="section" id="signup">
+      <h2>Create an account</h2>
+      <form class="signup-form" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" type="text" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" value="not-an-email">
+          <span class="error-msg" role="alert">Please enter a valid email address</span>
+        </div>
+        <button class="btn" type="submit">Create account</button>
+      </form>
+    </section>
+
+    <section class="section" id="why">
+      <h2>Why shoppers choose Northwind</h2>
+      <div class="features">
+        <div class="feature"><h3>Free returns</h3><p>Return anything within 60 days, no questions asked.</p></div>
+        <div class="feature"><h3>Repair program</h3><p>We patch, re-waterproof and resole your gear.</p></div>
+        <div class="feature"><h3>Carbon neutral</h3><p>Every shipment is offset through verified projects.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>&copy; <span id="year">2026</span> Northwind Outfitters (demo)</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
